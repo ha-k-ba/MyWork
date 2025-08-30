@@ -65,6 +65,14 @@ if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     export VIRTUAL_ENV_PROMPT
 fi
 
+export JAVA_HOME=/Users/harishb/java8/zulu8.60.0.21-ca-jdk8.0.322-macosx_aarch64/zulu-8.jdk/Contents/Home
+export SPARK_HOME=/Users/harishb/spark/spark-3.1.2-bin-hadoop2.7
+export HADOOP_HOME=/Users/harishb/spark/spark-3.1.2-bin-hadoop2.7
+
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:$SPARK_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/bin
+
 # Call hash to forget past commands. Without forgetting
 # past commands the $PATH changes we made may not be respected
 hash -r 2> /dev/null
